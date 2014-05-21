@@ -24,12 +24,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
 	    textView.setTextSize(40);
 	    textView.setText(message);
 
-		setContentView(R.layout.activity_display_message);
-		
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		setContentView(textView);		
 	}
 
 	@Override
